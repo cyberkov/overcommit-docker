@@ -1,6 +1,6 @@
 FROM ruby:2.4
 
-RUN apt-get update && apt-get install -y python-pip python-dev
+RUN apt-get update && apt-get install -y python-pip python-dev shellcheck
 RUN pip install --upgrade yamllint
 
 ENV HOME /overcommit
